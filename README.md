@@ -12,4 +12,4 @@ Install this browser extension in your browser via [this link](https://google.co
 
 ## Usage
 
-Still not yet decided
+Just enable it and its done... You wont see shorts now

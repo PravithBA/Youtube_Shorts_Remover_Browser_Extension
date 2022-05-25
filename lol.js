@@ -1,0 +1,2 @@
+document.querySelector("#app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)").setAttribute('style','display:none;')
+document.querySelector('ytm-pivot-bar-renderer').setAttribute('style','display:grid;grid-auto-flow:column;place-items:center;')
