@@ -16,7 +16,7 @@ Install this browser extension in your browser via [this link](https://google.co
 - Download this repo as a .zip file
 - Type `chrome://extensions` in the search bar
 - Then click `+ (from .zip/.crx/.user.js)` button and add the .zip file
-- That should hide shorts on your youtube web app
+- That should hide shorts on your youtube web app after **RELAUNCHING THE BROWSER**
 
 ## Usage
 
