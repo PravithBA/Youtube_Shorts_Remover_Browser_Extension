@@ -5,10 +5,18 @@
 **If yes you need this browser extension**
 
 This browser extension disables shorts from your youtube feed so you will never have to worry about the annoying and addicting shorts
+<!-- 
+## Installation
+
+Install this browser extension in your browser via [this link](https://google.com) or you can search youtubeShortsRemover on chrome store if you are a psychopaths -->
 
 ## Installation
 
-Install this browser extension in your browser via [this link](https://google.com) or you can search youtubeShortsRemover on chrome store if you are a psychopaths
+- Download Kiwi browser for extensions on android
+- Download this repo as a .zip file
+- Type `chrome://extensions` in the search bar
+- Then click `+ (from .zip/.crx/.user.js)` button and add the .zip file
+- That should hide shorts on your youtube web app
 
 ## Usage
 
