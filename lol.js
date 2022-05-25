@@ -2,13 +2,14 @@ document.querySelector("#app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-rende
 document.querySelector('ytm-pivot-bar-renderer').setAttribute('style','display:grid;grid-auto-flow:column;place-items:center;')
 window.onload = (function(){
     setTimeout(()=>{
-        document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list").addEventListener('DOMNodeInserted',(e,f)=>{
-            deleteShorts(e)
-        })
+        if(!document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list"))
+            return
         let firstSection = Array.from(document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list").children)
         firstSection.forEach(e=>{
             deleteShorts(e)
         })
+        if(!document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list"))
+            return
         document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list").addEventListener('DOMNodeInserted',(e,f)=>{
             deleteShortsNew(e)
         })
