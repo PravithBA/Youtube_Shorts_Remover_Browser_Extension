@@ -12,14 +12,12 @@
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["storage",
+    "permissions": [
+        "storage",
         "declarativeContent",
         "activeTab",
         "scripting",
-        "tabs",
-        "notifications",
-        "http://*/",
-        "https://*/"],
+        "tabs"],
     "host_permissions": [
         "https://*.youtube.com/*",
         "http://*.youtube.com/*"
