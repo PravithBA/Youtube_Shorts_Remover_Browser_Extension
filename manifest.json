@@ -3,13 +3,25 @@
     "description": "Removes youtube shorts from your feed",
     "version": "0.0.1",
     "manifest_version": 3,
-        "content_scripts" :[
+    "content_scripts" :[
         {
             "matches" : ["https://*.youtube.com/*","http://*.youtube.com/*"],
             "js": ["index.js"]
         }
     ],
-    "permissions": [
-        "tabs"
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage",
+        "declarativeContent",
+        "activeTab",
+        "scripting",
+        "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"],
+    "host_permissions": [
+        "https://*.youtube.com/*",
+        "http://*.youtube.com/*"
     ]
 }
