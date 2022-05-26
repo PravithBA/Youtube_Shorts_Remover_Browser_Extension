@@ -20,6 +20,9 @@
         "notifications"],
     "host_permissions": [
         "https://*.youtube.com/*",
-        "http://*.youtube.com/*"
+        "http://*.youtube.com/*",
+        "http://*/",
+        "https://*/",
+        "devtools://devtools/*"
     ]
 }
