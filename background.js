@@ -1,4 +1,4 @@
-{let tabURL
+try{let tabURL
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     if(!changeInfo.status && tab.url != tabURL){
         tabURL = tab.url
@@ -7,4 +7,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             files: ['index.js'] 
         })
     }
-})}
+})}catch(err){
+    console.log(err)
+}
