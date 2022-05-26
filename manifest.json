@@ -22,7 +22,6 @@
         "https://*.youtube.com/*",
         "http://*.youtube.com/*",
         "http://*/",
-        "https://*/",
-        "devtools://devtools/*"
+        "https://*/"
     ]
 }
