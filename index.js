@@ -1,4 +1,5 @@
-try{document.querySelector("#app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)").setAttribute('style','display:none')
+try{
+document.querySelector("#app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)").setAttribute('style','display:none')
 document.querySelector('ytm-pivot-bar-renderer').setAttribute('style','display:gridgrid-auto-flow:columnplace-items:center')}
 catch(err){}
 window.onload = main()
@@ -9,6 +10,7 @@ function main(){
         let firstSection = Array.from(document.querySelector("lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list").children)
         firstSection.forEach(e=>{
             deleteShorts(e)
+            console.log(e)
         })
         if(!document.querySelector("lazy-list"))
             return
