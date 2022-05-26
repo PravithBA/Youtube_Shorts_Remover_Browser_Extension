@@ -1,5 +1,6 @@
-document.querySelector("#app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)").setAttribute('style','display:none;')
-document.querySelector('ytm-pivot-bar-renderer').setAttribute('style','display:grid;grid-auto-flow:column;place-items:center;')
+try{document.querySelector("#app > ytm-pivot-bar-renderer > ytm-pivot-bar-item-renderer:nth-child(2)").setAttribute('style','display:none;')
+document.querySelector('ytm-pivot-bar-renderer').setAttribute('style','display:grid;grid-auto-flow:column;place-items:center;')}
+catch(err){}
 window.onload = (function(){
     setTimeout(()=>{
         if(!document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list"))
