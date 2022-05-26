@@ -1,8 +1,7 @@
 try{
-    let tabURL
     chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-        if(changeInfo.status = "completed" && tab.url != tabURL && tab.url.startsWith('http')){
-            tabURL = tab.url
+        if(changeInfo.status = "completed" && tab.url.startsWith('http')){
+            console.log("fuck")
             chrome.scripting.executeScript({
                 target: {tabId: tabId},
                 files: ['index.js'] 
