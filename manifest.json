@@ -17,9 +17,7 @@
         "activeTab",
         "scripting",
         "tabs",
-        "notifications",
-        "http://*/",
-        "https://*/"],
+        "notifications"],
     "host_permissions": [
         "https://*.youtube.com/*",
         "http://*.youtube.com/*"

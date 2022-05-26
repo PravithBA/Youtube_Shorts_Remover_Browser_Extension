@@ -4,15 +4,15 @@ catch(err){}
 window.onload = main()
 function main(){
     setTimeout(()=>{
-        if(!document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list"))
+        if(!document.querySelector("lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list"))
             return
-        let firstSection = Array.from(document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list").children)
+        let firstSection = Array.from(document.querySelector("lazy-list > ytm-item-section-renderer:nth-child(1) > lazy-list").children)
         firstSection.forEach(e=>{
             deleteShorts(e)
         })
-        if(!document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list"))
+        if(!document.querySelector("lazy-list"))
             return
-        document.querySelector("#app > div.page-container > ytm-search > ytm-section-list-renderer > lazy-list").addEventListener('DOMNodeInserted',(e,f)=>{
+        document.querySelector("lazy-list").addEventListener('DOMNodeInserted',(e,f)=>{
             deleteShortsNew(e)
         })
     },1000)
