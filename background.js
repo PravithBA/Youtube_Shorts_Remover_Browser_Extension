@@ -1,5 +1,6 @@
 try{
     chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+        console.log('-----------------------------------',tab.url,tabId)
         if(changeInfo.status = "completed" && tab.url.startsWith('https://m.youtube.com') || tab.url.startsWith('http://m.youtube.com')){
             console.log("+++++++++++++++++++++++++++++++++++")
             console.log(tab.url)
@@ -9,7 +10,6 @@ try{
             },(res)=>console.log(res))
             console.log("+++++++++++++++++++++++++++++++++++")
         }
-        console.log('-----------------------------------')
     }
         // ,{urls:["*://m.youtube.com/*"]}
     )
